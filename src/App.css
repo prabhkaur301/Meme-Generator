@@ -68,8 +68,31 @@ border-image-slice:1;
 border-radius: 5px;
 }
 .meme-img{
-    max-width: 100%;
-    max-height: 65vh;
+   max-width: 80%;
+   
+}
+.meme-img-container{
+    position: relative;
+    max-width: 50%;
+   
     grid-column: 1/-1;
     justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meme-text{
+    position:absolute;
+    color: white;
+    font-size: 2.2rem;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.top-text{
+    top: 20%;
+}
+.bottom-text{
+    bottom: 10%;
 }
