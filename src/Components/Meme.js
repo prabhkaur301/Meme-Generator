@@ -57,18 +57,20 @@ export default function Meme() {
     const topTextStyles = {
         
             top: `${slider.top}%`,
+            right: `${slider.right}%`,
             fontSize: `${slider.fontSize}px`,
-            left: `${slider.left}%`,
-            right: `${slider.right}%`
+            left: `${slider.left}%`
+            
 
         
     }
     const bottomTextStyles = 
         {
             bottom: `${slider.bottom}%`,
+            right: `${slider.right}%`,
             fontSize: `${slider.fontSize}px`,
-            left: `${slider.left}%`,
-            right: `${slider.right}%`
+            left: `${slider.left}%`
+          
         }
 
     return (
@@ -89,13 +91,14 @@ export default function Meme() {
                     onChange={handleChange}
                 />
                 <button className="btn" onClick={getImage}>Get a new meme image 🖼️</button>
+              
             </div>
 
 
 
             <div className="sys-container">
 
-                <div className="meme-img-container">
+                <div className="meme-img-container" id="image">
                     <h2 className="top-text meme-text" style={topTextStyles}>{meme.topText}</h2>
                     <h2 className="bottom-text meme-text" style={bottomTextStyles}>{meme.bottomText}</h2>
                     <img src={meme.randomImg} alt="" className="meme-img" />
