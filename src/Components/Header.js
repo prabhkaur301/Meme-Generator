@@ -1,4 +1,4 @@
-import image from "../images/troll-face.svg"
+import image from "./images/troll-face.svg"
 export default function Header(){
     return(
         <header className="header">
