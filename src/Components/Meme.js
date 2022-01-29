@@ -59,7 +59,7 @@ export default function Meme() {
             top: `${slider.top}%`,
             fontSize: `${slider.fontSize}px`,
             left: `${slider.left}%`,
-            right: `${slider.right}%`,
+            right: `${slider.right}%`
 
         
     }
@@ -68,7 +68,7 @@ export default function Meme() {
             bottom: `${slider.bottom}%`,
             fontSize: `${slider.fontSize}px`,
             left: `${slider.left}%`,
-            right: `${slider.right}%`,
+            right: `${slider.right}%`
         }
 
     return (
