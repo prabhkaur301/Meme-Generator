@@ -87,13 +87,13 @@ body {
 }
 .meme-text {
   position: absolute;
-
+  font-family:'Inter',sans-serif;
   width: 80%;
   color: white;
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-  font-style: italic;
+  
   text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
     0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
     0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
