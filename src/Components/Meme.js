@@ -1,4 +1,6 @@
 import React from "react"
+import domtoimage from 'dom-to-image'
+import icon from "../images/download-solid.svg"
 export default function Meme() {
 
     // state for managing meme
@@ -52,7 +54,15 @@ export default function Meme() {
         })
     }
 
-
+    function downloadImg(){
+        domtoimage.toJpeg(document.getElementById('image'), { quality: 0.95 })
+        .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'Meme.jpeg';
+        link.href = dataUrl;
+        link.click();
+    });
+}
 
     const topTextStyles = {
         
@@ -139,6 +149,12 @@ export default function Meme() {
                         value={slider.fontSize}
                         onChange={handleSliderChange}
                     />
+
+
+                    <button id="download-btn" onClick={downloadImg} >
+                        Download Meme
+                        <img src={icon} id="icon"/>
+                        </button>
                 </div>
 
             </div>
