@@ -19,7 +19,7 @@ export default function Meme() {
         bottom: 0,
         fontSize: 16
     })
-    const labels=["Top: ","Left: ","Right: ","Bottom: ","Font-Size: "]
+    const labels = ["Top: ", "Left: ", "Right: ", "Bottom: ", "Font-Size: "]
 
     // useEffect for getting data from Api
 
@@ -54,34 +54,34 @@ export default function Meme() {
         })
     }
 
-    function downloadImg(){
+    function downloadImg() {
         domtoimage.toJpeg(document.getElementById('image'), { quality: 0.95 })
-        .then(function (dataUrl) {
-        var link = document.createElement('a');
-        link.download = 'Meme.jpeg';
-        link.href = dataUrl;
-        link.click();
-    });
-}
+            .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = 'Meme.jpeg';
+                link.href = dataUrl;
+                link.click();
+            });
+    }
 
     const topTextStyles = {
-        
-            top: `${slider.top}%`,
-            right: `${slider.right}%`,
-            fontSize: `${slider.fontSize}px`,
-            left: `${slider.left}%`
-            
 
-        
+        top: `${slider.top}%`,
+        right: `${slider.right}%`,
+        fontSize: `${slider.fontSize}px`,
+        left: `${slider.left}%`
+
+
+
     }
-    const bottomTextStyles = 
-        {
-            bottom: `${slider.bottom}%`,
-            right: `${slider.right}%`,
-            fontSize: `${slider.fontSize}px`,
-            left: `${slider.left}%`
-          
-        }
+    const bottomTextStyles =
+    {
+        bottom: `${slider.bottom}%`,
+        right: `${slider.right}%`,
+        fontSize: `${slider.fontSize}px`,
+        left: `${slider.left}%`
+
+    }
 
     return (
         <main>
@@ -101,7 +101,7 @@ export default function Meme() {
                     onChange={handleChange}
                 />
                 <button className="btn" onClick={getImage}>Get a new meme image 🖼️</button>
-              
+
             </div>
 
 
@@ -121,14 +121,14 @@ export default function Meme() {
                         value={slider.top}
                         onChange={handleSliderChange}
                     />
-                     <label htmlFor="left">{labels[1]}</label>
+                    <label htmlFor="left">{labels[1]}</label>
                     <input className="left range-slider"
                         type="range"
                         name="left"
                         value={slider.left}
                         onChange={handleSliderChange}
                     />
-                   <label htmlFor="bottom">{labels[3]}</label>
+                    <label htmlFor="bottom">{labels[3]}</label>
                     <input className="bottom range-slider"
                         type="range"
                         name="bottom"
@@ -153,8 +153,8 @@ export default function Meme() {
 
                     <button id="download-btn" onClick={downloadImg} >
                         Download Meme
-                        <img src={icon} id="icon"/>
-                        </button>
+                        <img src={icon} id="icon" />
+                    </button>
                 </div>
 
             </div>

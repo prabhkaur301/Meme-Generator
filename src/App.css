@@ -10,6 +10,7 @@ body {
 .header {
   background-color: #f7b42c;
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  width: 100%;
   color: white;
   padding: 1rem 3rem;
   height: 10vh;
@@ -54,8 +55,8 @@ body {
   transition: 0.1s all linear;
 }
 .form .input:focus {
- border: none;
- outline:none;
+  border: none;
+  outline: none;
 }
 .form .input:focus {
   border: 4px solid;
@@ -75,7 +76,7 @@ body {
 }
 .meme-img-container {
   position: relative;
-  min-width: 350px;
+
   width: 450px;
   height: 400px;
 
@@ -87,13 +88,13 @@ body {
 }
 .meme-text {
   position: absolute;
-  font-family:'Inter',sans-serif;
+  font-family: "Inter", sans-serif;
   width: 80%;
   color: white;
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-  
+
   text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
     0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
     0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
@@ -114,9 +115,9 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   grid-gap: 0.5em;
-  
+
   padding: 1rem 5rem;
-  margin-bottom:2rem 
+  margin-bottom: 2rem;
 }
 .slider-container {
   grid-row: 1/2;
@@ -141,7 +142,7 @@ body {
   border-radius: 5px;
   background: #ffffff;
   outline: none;
-  
+
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   margin: 0.5em 0;
@@ -156,9 +157,7 @@ body {
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 
   cursor: pointer;
- 
 }
-
 
 .range-slider::-moz-range-thumb {
   width: 20px;
@@ -167,28 +166,70 @@ body {
   background: orangered;
   cursor: pointer;
 }
-#download-btn{
+#download-btn {
   background-color: #f7b42c;
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
   border: none;
-  outline:none;
+  outline: none;
   width: 90%;
   height: 45px;
   border-radius: 10px;
   color: white;
-  margin:1rem 0;
+  margin: 1rem 0;
   cursor: pointer;
-  
+
   transition: all 0.2s linear;
 }
-#download-btn:hover{
+#download-btn:hover {
   background-image: linear-gradient(15deg, #f7b42c 0%, #fc575e 74%);
 }
-#download-btn:active{
+#download-btn:active {
   border: 1px solid white;
   transform: scale(0.9);
 }
-#icon{
-width: 10px;
-filter: invert(1);
+#icon {
+  width: 10px;
+  filter: invert(1);
+}
+
+@media screen and (max-width: 800px) {
+  .sys-container {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .slider-container {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 2/3;
+    padding: 1em 1.8em;
+  }
+
+  #download-btn {
+    height: 30px;
+    width: 100%;
+  }
+  .meme-img-container {
+    grid-column: 1/-1;
+    width: 100%;
+    height: auto;
+    grid-row: 1/2;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .header {
+    height: 50px;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .input {
+    height: 40px;
+  }
+  .form .btn {
+    font-weight: 400;
+  }
 }
