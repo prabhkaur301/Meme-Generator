@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: todo-example
+  name: todo-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-example
+  template:
+    metadata:
+      labels:
+        app: todo-example
+    spec:
+      containers:
+      - image: dockerhub9876/todo
+        name: todo-example
+        ports:
+        - containerPort: 8080
