@@ -33,3 +33,4 @@ jobs:
       - name: Apply Kubernetes manifests
         run: |
           kubectl apply -f deployment.yml
+          kubectl get pods
