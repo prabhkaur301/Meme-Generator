@@ -24,8 +24,8 @@ jobs:
         run: docker push "${DOCKERHUB_USERNAME}"/meme-gen:latest
       - name: Start Minikube
         run: |
-          minikube start --force --driver=docker.io
-          snap install kubectl --classic
+          minikube start
+          minikube update-context
       - name: Deploy to Kubernetes
         uses: steebchen/kubectl@v1.0.0
         with:
