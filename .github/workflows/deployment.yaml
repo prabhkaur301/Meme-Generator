@@ -15,7 +15,7 @@ spec:
         app: todo-example
     spec:
       containers:
-      - image: dockerhub9876/todo
+      - image: wededo4644/meme-gen:latest
         name: todo-example
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
