@@ -75,3 +75,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `docker build -t <DOCKER_IMAGE> .`
 
 ### `docker run -d -p 3000:3000 <DOCKER_IMAGE>`
+
+
+## ArgoCD Deployment in Kubernetes Cluster :
+
+<img width="960" alt="image" src="https://github.com/RohanRusta21/Meme-Generator/assets/110477025/0daf5129-0366-4eef-9505-495f6d96b2d4">
+
+
+<img width="960" alt="image" src="https://github.com/RohanRusta21/Meme-Generator/assets/110477025/cc861cb5-7b9e-41f2-a287-58eb30d36277">
+
+
+<img width="960" alt="image" src="https://github.com/RohanRusta21/Meme-Generator/assets/110477025/16759553-7f16-43f5-8a15-6da9eb6a590f">
+
+
+<img width="944" alt="image" src="https://github.com/RohanRusta21/Meme-Generator/assets/110477025/dd01206e-05ed-4532-9062-fbe1e3ad34e5">
+
