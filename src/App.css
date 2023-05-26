@@ -35,7 +35,6 @@ body {
   justify-self: center;
   cursor: pointer;
   color: white;
-
   font-weight: 600;
   font-size: 1.4rem;
   padding: 0.5rem 2.5rem;
@@ -177,6 +176,7 @@ body {
   color: white;
   margin: 1rem 0;
   cursor: pointer;
+  padding: 0.5rem 0;
 
   transition: all 0.2s linear;
 }
@@ -192,6 +192,21 @@ body {
   filter: invert(1);
 }
 
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.radio-container-items{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+.radio-input{
+  accent-color: #f7b42c;
+  margin-left: 0.2rem;
+}
 @media screen and (max-width: 800px) {
   .sys-container {
     grid-template-columns: 1fr;

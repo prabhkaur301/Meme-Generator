@@ -88,6 +88,7 @@ export default function Meme() {
       });
   }
 
+  console.log(activeStyle)
   return (
     <main>
       <div className="form">
@@ -126,6 +127,7 @@ export default function Meme() {
         <div className="slider-container">
           <div className="radio-container">
             <p>Styles: </p>
+            <div className="radio-container-items">
             <label>
               Top
               <input
@@ -134,6 +136,7 @@ export default function Meme() {
                 value="top"
                 checked={activeStyle === "top"}
                 onChange={() => setActiveStyle("top")}
+                className="radio-input"
               />
             </label>
             <label>
@@ -144,8 +147,10 @@ export default function Meme() {
                 value="bottom"
                 checked={activeStyle === "bottom"}
                 onChange={() => setActiveStyle("bottom")}
+                className="radio-input"
               />
             </label>
+            </div>
           </div>
           {sliderData.map((item) => (
             <React.Fragment key={item.value}>
